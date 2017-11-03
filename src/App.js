@@ -1,18 +1,37 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import router from './router';
 import './App.css';
 
+
+
 class App extends Component {
+  constructor(){
+    super();
+
+    this.state= {
+      name: '',
+      description: '',
+      loan_amount: 0,
+      monthly_mortgage: 0,
+      recommended_rent: 0,
+      desired_rent: 0,
+      address_line: '',
+      city: '',
+      state: '',
+      zip: 0
+    }
+  //Binds
+
+  }
+
+  //Methods
+
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <h1> App Page </h1>
+        { router }
       </div>
     );
   }
