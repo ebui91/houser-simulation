@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './home.css';
-
+import { Link } from  'react-router-dom';
 
 class Home extends Component {
   render(){
@@ -14,11 +14,14 @@ class Home extends Component {
 
             <div className="main-login">
               <input type="text" placeholder="Type in user name" className="username"></input>
-              <input type="text" placeholder=" type in password" className="password"></input>
+              <input type="text" placeholder=" Type in password" className="password"></input>
             </div>
 
             <div className='home-buttons'>
-            <button className="Login">Login</button>
+            <Link to='/dashboard'>
+              <button className="Login">Login</button>
+            </Link>
+
             <button className="Register">Register</button>
 
             </div>
