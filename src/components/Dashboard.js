@@ -10,16 +10,25 @@ class Dashboard extends Component{
 
   //Methods
   serverCall(){
-    axios.get('/api/dashboard', (req, res, next)=>{
+    axios.get('/api/dashboard').then(req, res, next)=>{
       console.log(res);
-    })
+    }).catch(error=>console.log(error);)
   }
 
   render(){
     return(
       <div className= 'main-container'>
-        Dashboard Page!
+        <h1>Dashboard Page</h1>
+        <div className= 'rent-filter'>
+          <button>Add New Property</button>
+          <p>List properties with "desired rent" greator than: $</p>
+          <input type='text' placeholder='0'></input>
+        </div>
+
         <button onClick={this.serverCall}> TEST TO SERVER </button>
+        <hr>
+
+
       </div>
     )
   }
