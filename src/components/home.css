@@ -1,0 +1,63 @@
+.main-container{
+  font-family: Arial;
+  height: 100vh;
+  margin: auto;
+}
+
+.white-container{
+  background: white;
+  width: 60%;
+  height: 100vh;
+  margin: auto;
+}
+
+.login-btn{
+  width: 130px;
+  height: 40px;
+  background: #8AEA92;
+  font-size: 16px;
+  font-weight: bold;
+  border-style: none;
+  margin-top: 50px;
+}
+
+.reg-btn{
+  width: 130px;
+  height: 40px;
+  background: #3B5249;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-style: none;
+  margin: 15px;
+}
+
+.home-logo{
+  margin-top: 20%;
+  margin-bottom: 25px;
+  height: 175px;
+  width: 150px;
+}
+
+input{
+  width: 600px;
+  height: 30px;
+  border-style: solid;
+  border-color: #3B5249;
+  border-width: 1px;
+}
+
+.main-login{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-login p{
+  margin-right: 58%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}

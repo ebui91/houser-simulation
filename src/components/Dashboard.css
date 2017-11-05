@@ -1,0 +1,80 @@
+.main-container{
+  font-family: Arial;
+  height: 100vh;
+}
+
+hr{
+  border-color: black;
+  border-width: 0.5px;
+  width: 95%;
+}
+
+.new-prop-btn{
+  width: 200px;
+  height: 50px;
+  background: #8AEA92;
+  font-size: 20px;
+  font-weight: bold;
+  border-style: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.rent-filter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #EFF7F2;
+  height: 90vh;
+  width: 55%;
+  margin: auto;
+}
+
+.rent-filter p{
+  font-size: 20px;
+}
+
+.rent-input{
+  width: 85px;
+  height: 25px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5%;
+  border-color: #3B5249;
+}
+
+.filter-box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.filter-box .btn{
+  height: 40px;
+  width: 70px;
+  padding: 5px;
+  margin: 5px;
+  border-style: none;
+  font-size: 16px;
+}
+
+.btn-filter{
+  background: #8AEA92;
+}
+
+.btn-reset{
+  background: #3B5249;
+  color: white;
+}
+
+.home-list{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.home-list{
+  display: flex;
+  flex-direction: column;
+
+}

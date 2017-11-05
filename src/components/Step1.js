@@ -12,22 +12,49 @@ class Step1 extends Component{
     return(
       <div className='main-container'>
         <Navbar />
-        <h1>Add new listing page</h1>
-        <input type= 'text' placeholder='Property name...'></input>
-        <input type= 'text' placeholder='Description...'></input>
-        <Link to='/step2'>
-          <button className='next-step'>Next Step</button>
-        </Link>
+
+        <div className='mid-container'>
+
+          <div className='step-head'>
+            <h2>Add new listing</h2>
+            <Link to='/dashboard'>
+              <button className='btn-cancel'>Cancel</button>
+            </Link>
+          </div>
+
+          <div className='step-counter'>
+            <p>Step 1</p>
+            <div className='circle-row'>
+              <img className='big-circle' src={require('./../images/big-circle.png')} alt='progress'></img>
+              <img className='big-circle' src={require('./../images/big-circle.png')} alt='progress'></img>
+              <img className='big-circle' src={require('./../images/big-circle.png')} alt='progress'></img>
+              <img className='big-circle' src={require('./../images/big-circle.png')} alt='progress'></img>
+              <img className='small-circle' src={require('./../images/small-circle.png')} alt='progress'></img>
+            </div>
+          </div>
+
+          <div className='input-box'>
+            <h3>Property Name</h3>
+            <input className='input input-prop' type= 'text' onChange= { (e)=> { updateName(e.target.value) } }></input>
+            <h3 id='prop-desc'>Property Description</h3>
+            <textarea className='input input-desc' type= 'text' onChange= { (e)=> { updateDescription(e.target.value) } }></textarea>
+          </div>
+
+          <Link to='/step2'>
+            <button className='btn-next' onClick= { (e)=> console.log(this.props.name, this.props.description) }>Next Step</button>
+          </Link>
+        </div>
      </div>
     )
   }
 }
 
-function mapStateToProps(state) {
+function mapStateToProps(state){
   const { name, description }= state;
-  return {
-    name
+  return{
+    name,
+    description
   };
 }
 
-export default connect(mapStateToProps, { updateName })(Step1);
+export default connect(mapStateToProps, { updateName, updateDescription })(Step1);

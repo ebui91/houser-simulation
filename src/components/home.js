@@ -6,28 +6,26 @@ class Home extends Component {
   render(){
     return(
       <div className="main-container">
+        <div className='white-container'>
           <div className="houser-container">
-            <div className="houser-logo">
-            <img src="" alt="logo"></img>
-
-            </div>
+            <img className='home-logo' src={require("../images/houser-login-logo.png")} alt="logo"></img>
 
             <div className="main-login">
-              <input type="text" placeholder="Type in user name" className="username"></input>
-              <input type="text" placeholder=" Type in password" className="password"></input>
+              <p>Username</p>
+              <input type="text" placeholder="Type in username" className="login"></input>
+              <p>Password</p>
+              <input type="text" placeholder=" Type in password" className="login"></input>
             </div>
 
             <div className='home-buttons'>
-            <Link to='/dashboard'>
-              <button className="Login">Login</button>
-            </Link>
+              <Link to='/dashboard'>
+                <button className='login-btn'>Login</button>
+              </Link>
 
-            <button className="Register">Register</button>
-
+              <button className='reg-btn'>Register</button>
             </div>
-
           </div>
-
+        </div>
       </div>
     )
   }

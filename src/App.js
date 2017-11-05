@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import router from './router';
 import './App.css';
-import Home from './components/home.js';
 import { connect } from 'react-redux'
 
 
@@ -15,7 +14,5 @@ class App extends Component {
   }
 }
 
-
 const mapStateToProps= (state)=> state;
-
 export default connect(mapStateToProps)(App);

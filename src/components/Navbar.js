@@ -7,8 +7,10 @@ class Navbar extends Component{
     return(
       <div className='nav-container'>
         <div className='nav-left'>
-          <img className='nav-logo' src='../logo.jpg'></img>
-          <p>Houser Dashboard</p>
+          <Link to='/dashboard'>
+            <img className='nav-logo' src={require('../images/houser-nav-logo.png')} alt='houser logo'></img>
+          </Link>
+          <p><span className='bold-text'>Houser</span> Dashboard</p>
         </div>
 
         <Link  className='nav-right' to='/'>
